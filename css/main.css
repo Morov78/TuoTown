@@ -79,11 +79,16 @@ body {
   color: #FFFFFF;
   width: 165px;
   border-width: 0px;
-  border-radius: 27px;
+  border-radius: 10px;
+  transition: border-radius var(--trans-duration) var(--trans-timing-func);
   background-color: #C80000;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.22;
+}
+
+.button:hover, .button:focus {
+  border-radius: 27px;
 }
 
 .header__container {
@@ -92,7 +97,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   height: 540px;
-  background-image: linear-gradient(180deg, black 53%, rgba(0, 0, 0, 0)), url(../../images/fp.png);
+  background-color: red;
   background-size: 320px 350px, 320px 354px;
   background-position: left top, 0px 186px;
   background-repeat: no-repeat, no-repeat;
@@ -112,10 +117,14 @@ body {
   margin-right: 25px;
 }
 
+.nav__link {
+  color: white;
+}
+
 .nav__icon {
   width: 24px;
   height: 24px;
-  fill: #FFFFFF;
+  fill: currentColor;
 }
 
 .fp {

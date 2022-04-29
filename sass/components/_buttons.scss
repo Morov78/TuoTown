@@ -6,7 +6,12 @@
     color: #FFFFFF;
     width: 165px;
     border-width: 0px;
-    border-radius: 27px;
+    border-radius: 10px;
+    transition: border-radius var(--trans-duration) var(--trans-timing-func);
     background-color: $active;
     @include text-styles(14px, 600, 1.22);
+
+    &:hover, &:focus {
+        border-radius: 27px;
+    }
 }
